@@ -1,0 +1,33 @@
+{
+  "name": "stratadox/php-generics",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stratadox",
+      "homepage": "http://www.stratadox.com/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Stratadox\\PhpGenerics\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Stratadox\\PhpGenerics\\Test\\": "tests"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "nikic/php-parser": "^4.3",
+    "doctrine/annotations": "^1.8",
+    "stratadox/immutable-collection": "^1.1",
+    "psr/log": "^1.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpstan/phpstan": "^0.11.12",
+    "phpunit/phpunit": "^8.2"
+  }
+}

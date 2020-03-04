@@ -1,0 +1,24 @@
+language:
+  php
+
+php:
+  - '7.2'
+  - '7.3'
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
+
+before_script:
+  - composer install
+
+script:
+  - mkdir -p build/logs
+  - vendor/bin/phpunit -c phpunit-coverage.xml --testdox
+
+after_success:
+  - travis_retry php vendor/bin/php-coveralls
+
+notifications:
+  email: false
