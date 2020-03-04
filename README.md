@@ -36,8 +36,11 @@ question is executed.
 There's no need to import either `Collection__string` or `Collection__Foo` in 
 the aforementioned examples; the generated classes adopt the namespace of the 
 calling code.
+The generic base class (in this case `My\Generic\Collection`) and the type 
+arguments (`My\Domain\Foo`) do need to be imported, even if they are not 
+(seemingly) used.
 
-Only when type checking for the concrete generic class, an import is required:
+Only when type checking for the concrete generic class, the import is required:
 ```php
 <?php
 namespace Some\Other\Name\Space;
