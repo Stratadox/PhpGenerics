@@ -1,4 +1,9 @@
 # Generics in PHP
+
+[![Build Status](https://travis-ci.org/Stratadox/PhpGenerics.svg?branch=master)](https://travis-ci.org/Stratadox/PhpGenerics)
+[![Coverage Status](https://coveralls.io/repos/github/Stratadox/PhpGenerics/badge.svg?branch=master)](https://coveralls.io/github/Stratadox/PhpGenerics?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Stratadox/PhpGenerics/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Stratadox/PhpGenerics/?branch=master)
+
 Albeit with some limitations and caveats, this library unlocks the power of 
 generics for the PHP language.
 
