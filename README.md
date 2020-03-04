@@ -11,6 +11,12 @@ generics for the PHP language.
 Install with `composer require stratadox/php-generics`
 
 ## Usage
+First install the autoloader, using:
+```php
+<?php
+use Stratadox\PhpGenerics\Autoloader;
+Autoloader::default()->install();
+```
 
 ### Making a new instance of a generic class
 Given a generic base class `Collection`, with type parameter `T`.
