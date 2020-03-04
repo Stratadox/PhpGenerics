@@ -8,7 +8,7 @@ use function is_dir;
 use function mkdir;
 use function sprintf;
 use function str_replace;
-use const DIRECTORY_SEPARATOR;
+use const DIRECTORY_SEPARATOR as DS;
 
 class FileWriter
 {
@@ -25,7 +25,10 @@ class FileWriter
 
     public static function default(): self
     {
-        return new self(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'Generated' . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR);
+        return new self(
+            dirname(__DIR__, 2) . DS . 'Generated' . DS,
+            DS
+        );
     }
 
     public function write(string $namespace, string $class, string $content): void
